@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLP Solar</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- MENU -->
+    <header id="menu">
+        <h1><img class="logo-site" src="IMG/logo.png" alt="BLP Solar" /></h1>
+        <nav>
+            <ul id="navegador">
+                <li><a href="#">Home</a></li>
+                <li><a href="#contador">Projetos</a></li>
+                <li><a href="#orcamento">Orçamento</a></li>
+                <li><a href="https://wa.me/5519992756676" target="_blank">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="centralizar">
+            <h2>Energia <em>Solar</em> para o futuro</h2>
+            <p>Cansado da conta de luz alta? Economize até 90% com energia solar limpa e sustentável.</p>
+            <div id="hero-botoes">
+                <a href="https://wa.me/5519992756676" target="_blank" class="botao">Resolva seu problema ↗</a>
+            </div>
+        </section>
+
+        <!-- BENEFÍCIOS -->
+        <section id="beneficios">
+        <h2>Por que escolher energia solar?</h2>
+        <div id="grade-beneficios">
+            <div class="card-beneficios">💰 Economia de até 90%
+                <p>Reduza drasticamente sua conta de energia e invista a economia em outras áreas da sua vida.</p>
+            </div>
+            <div class="card-beneficios">🌱 Sustentabilidade ambiental
+                <p>Contribua para um planeta mais limpo usando uma fonte renovável e inesgotável de energia.</p>
+            </div>
+            <div class="card-beneficios">🏠 Valorização do imóvel
+                <p>Imóveis com energia solar são mais valorizados e atraentes para compradores e investidores.</p>
+            </div>
+            <div class="card-beneficios">⚡ Independência energética
+                <p>Produza sua própria energia e fique menos dependente das tarifas e aumentos das distribuidoras.</p>
+            </div>
+        </div>
+        </section>
+
+        <!-- COMO FUNCIONA -->
+        <section id="processo">
+            <h2>Como funciona?</h2>
+            <div class="processo-grid">
+                <div class="etapa-card">
+                    <span class="etapa-numero">1</span>
+                    <h3>Contato</h3>
+                    <p>Você nos conta sobre seu projeto e tiramos todas as dúvidas iniciais.</p>
+                </div>
+                <div class="etapa-card">
+                    <span class="etapa-numero">2</span>
+                    <h3>Projeto</h3>
+                    <p>Montamos uma solução personalizada com análise da sua necessidade.</p>
+                </div>
+                <div class="etapa-card">
+                    <span class="etapa-numero">3</span>
+                    <h3>Instalação</h3>
+                    <p>Executamos com segurança, eficiência e acompanhamento completo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTADOR -->
+        <section id="contador">
+            <p id="contador-titulo">Nossos Números</p>
+            <h2 id="contador-subtitulo">Projetos Realizados</h2>
+            <div id="contador-grade">
+                <div class="contador-item">
+                    <div class="contador-icone">⚡</div>
+                    <p class="contador-numero" data-alvo="400" data-sufixo="+">0</p>
+                    <p class="contador-label">Projetos Realizados</p>
+                </div>
+                <div class="contador-item">
+                    <div class="contador-icone">🏠</div>
+                    <p class="contador-numero" data-alvo="400" data-sufixo="+">0</p>
+                    <p class="contador-label">Clientes Satisfeitos</p>
+                </div>
+                <div class="contador-item">
+                    <div class="contador-icone">📅</div>
+                    <p class="contador-numero" data-alvo="6" data-sufixo=" anos">0</p>
+                    <p class="contador-label">Anos de Experiência</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <h2>Projetos de Sucesso</h2>
+            <div id="grade-projetos">
+                <div class="item-projeto" onclick="abrirJanela('IMG/foto1.jpeg', 'Instalação Comercial', 'Projeto completo de energia solar com 36 módulos. Realizado em Indaiatuba, SP.')">
+                    <img src="IMG/foto1.jpeg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/foto2.jpeg', 'Instalação Residencial', 'Sistema fotovoltaico instalado em residência, com 16 módulos e redução de até 90% na conta de energia. Realizado em Itu, SP.')">
+                    <img src="IMG/foto2.jpeg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/foto3.jpeg', 'Instalação Residencial', 'Sistema com 12 módulos. Solução compacta e eficiente para condomínios. Realizado em Salto, SP.')">
+                    <img src="IMG/foto3.jpeg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/foto4.jpeg', 'Instalação Residencial', 'Projeto residencial com 16 módulos, garantindo independência energética na grande cidade. Realizado em São Paulo, SP.')">
+                    <img src="IMG/foto4.jpeg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/foto5.jpeg', 'Instalação Residencial', 'Projeto residencial com 12 módulos de alta eficiência e monitoramento remoto. Realizado em Campinas, SP.')">
+                    <img src="IMG/foto5.jpeg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/foto6.jpeg', 'Instalação Comercial', 'Sistema com 16 módulos para comércio, com geração de energia 24h. Realizado em Cajamar, SP.')">
+                    <img src="IMG/foto6.jpeg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/foto7.jpeg', 'Instalação Residencial', 'Sistema com 12 módulos e redução de até 90% na conta de energia. Realizado em Valinhos, SP.')">
+                    <img src="IMG/foto7.jpeg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/foto8.jpeg', 'Instalação Residencial', 'Projeto residencial completo com 16 módulos e bateria de armazenamento incluída. Realizado em Indaiatuba, SP.')">
+                    <img src="IMG/foto8.jpeg" alt="Projeto em Destaque" />
+                </div>
+            </div>
+        </section>
+
+        <!-- JANELA DE PROJETO -->
+        <div id="janela" onclick="fecharJanela()">
+            <div id="janela-conteudo" onclick="event.stopPropagation()">
+                <button id="janela-fechar" onclick="fecharJanela()">✕</button>
+                <img id="janela-imagem" src="" alt="Projeto" />
+                <h3 id="janela-titulo"></h3>
+                <p id="janela-descricao"></p>
+                <a href="https://wa.me/5519992756676" target="_blank" class="botao botao-janela">Quero um projeto igual ↗</a>
+            </div>
+        </div>
+
+        <!-- DEPOIMENTOS -->
+        <section id="depoimentos">
+            <h2>Veja os Depoimentos</h2>
+            <p id="depoimentos-sub">O que nossos clientes dizem no Google</p>
+
+            <div id="mCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="card-depoimento">
+                            <div class="estrelas">★★★★★</div>
+                            <p>"Recomendo a todos, entrega antes do prazo, profissionais especializados. muito satisfeito!!"</p>
+                            <div class="autor">
+                                <div class="autor-inicial">LK</div>
+                                <h6>Leonardo Kenes</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-depoimento">
+                            <div class="estrelas">★★★★★</div>
+                            <p>"Até o momento sem nenhum problema, tudo foi entregue e instalado bem antes do prazo, em menos de 15 dias tudo estava funcionando."</p>
+                            <div class="autor">
+                                <div class="autor-inicial">JB</div>
+                                <h6>Janaina Bento</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-depoimento">
+                            <div class="estrelas">★★★★★</div>
+                            <p>"Atendimento impecável. Agilidade, transparência e eficiência. Super indico."</p>
+                            <div class="autor">
+                                <div class="autor-inicial">AM</div>
+                                <h6>Adriana Mazeto</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-depoimento">
+                            <div class="estrelas">★★★★★</div>
+                            <p>"Serviço excepcional, atendimento pré e pós venda excelentes, equipe muito competente. Altamente recomendado! Parabéns BLP!"</p>
+                            <div class="autor">
+                                <div class="autor-inicial">VB</div>
+                                <h6>Valter Barros</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card-depoimento">
+                            <div class="estrelas">★★★★★</div>
+                            <p>"Excelentes profissionais! Ótima execução na negociação de venda até a instalação do equipamento."</p>
+                            <div class="autor">
+                                <div class="autor-inicial">DZ</div>
+                                <h6>Diego Zaghi</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULÁRIO DE ORÇAMENTO -->
+        <section id="orcamento">
+            <div class="orcamento-container">
+                <div class="orcamento-info">
+                    <span class="orcamento-tag">Orçamento rápido</span>
+                    <h2>Pronto para economizar com energia solar?</h2>
+                    <p>Preencha os dados abaixo e nossa equipe entrará em contato com uma proposta personalizada para sua residência ou empresa.</p>
+                    <ul>
+                        <li>✓ Análise sem compromisso</li>
+                        <li>✓ Simulação de economia</li>
+                        <li>✓ Instalação com equipe especializada</li>
+                    </ul>
+                </div>
+
+                <form class="orcamento-form" action="https://formsubmit.co/pedro@blpsolar.com.br" method="POST" onsubmit="mostrarMensagem(event)">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Novo orçamento recebido - BLP Solar">
+                    <input type="hidden" name="_template" value="table">
+
+                    <div class="form-grid">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div>
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(19) 99999-9999" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                        </div>
+                        <div>
+                            <label for="tipo">Tipo de imóvel</label>
+                            <select id="tipo" name="tipo">
+                                <option>Residencial</option>
+                                <option>Comercial</option>
+                                <option>Industrial</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="mensagem">Como podemos ajudar?</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre seu projeto..." required></textarea>
+                    <button type="submit" class="botao botao-form">Solicitar orçamento</button>
+                    <p class="form-feedback" id="form-feedback">Mensagem enviada com sucesso!</p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer id="rodape">
+        <div>
+            <h5><img src="IMG/logo.png" alt="BLP Solar" height="40" /></h5>
+            <p>Com a BLP, você converte energia solar em economia para o seu bolso e contribui para a preservação do meio ambiente.</p>
+        </div>
+        <div>
+            <h5>Navegação</h5>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#contador">Projetos</a></li>
+                <li><a href="#orcamento">Orçamento</a></li>
+                <li><a href="https://wa.me/5519992756676" target="_blank">Fale Conosco</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Contato</h5>
+            <ul>
+                <li>📍 Indaiatuba, SP</li>
+                <li>📞 (19) 99275-6676</li>
+                <li>✉️ contato@blpsolar.com.br</li>
+                <li>@blpsolar</li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="rodape-fundo">
+        © 2026 BLP SOLAR – O futuro é ser sustentável. Todos os direitos reservados.
+    </div>
+
+</body>
+</html>
