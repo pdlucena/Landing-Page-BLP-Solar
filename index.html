@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BLP Solar - Projetos de energia limpa e sustentável.">
     <title>BLP Solar</title>
+    <link rel="icon" href="/IMG/BLP Logo 2.png" type="image/png">
     <link rel="stylesheet" href="CSS/style.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700">
@@ -11,17 +13,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
     <!-- MENU -->
     <header id="menu">
-        <h1><img class="logo-site" src="IMG/logo.png" alt="BLP Solar" /></h1>
+        <h1>
+            <a href="#">
+                <img class="logo-site" src="IMG/BLP Logo.png" alt="BLP Solar">
+            </a>
+        </h1>
         <nav>
             <ul id="navegador">
-                <li><a href="#">Home</a></li>
                 <li><a href="#contador">Projetos</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#orcamento">Orçamento</a></li>
-                <li><a href="https://wa.me/5519992756676" target="_blank">Fale Conosco</a></li>
+                <li><a href="https://wa.me/5519992756676" target="_blank" class="btn-contato">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +44,7 @@
         </section>
 
         <!-- BENEFÍCIOS -->
-        <section id="beneficios">
+        <section id="beneficios" class="fade-slide fade-left">
         <h2>Por que escolher energia solar?</h2>
         <div id="grade-beneficios">
             <div class="card-beneficios">💰 Economia de até 90%
@@ -56,7 +63,7 @@
         </section>
 
         <!-- COMO FUNCIONA -->
-        <section id="processo">
+        <section id="processo" class="fade-slide fade-right">
             <h2>Como funciona?</h2>
             <div class="processo-grid">
                 <div class="etapa-card">
@@ -78,7 +85,7 @@
         </section>
 
         <!-- CONTADOR -->
-        <section id="contador">
+        <section id="contador" class="fade-slide fade-up">
             <p id="contador-titulo">Nossos Números</p>
             <h2 id="contador-subtitulo">Projetos Realizados</h2>
             <div id="contador-grade">
@@ -101,7 +108,7 @@
         </section>
 
         <!-- PROJETOS -->
-        <section id="projetos">
+        <section id="projetos" class="fade-slide fade-up">
             <h2>Projetos de Sucesso</h2>
             <div id="grade-projetos">
                 <div class="item-projeto" onclick="abrirJanela('IMG/foto1.jpeg', 'Instalação Comercial', 'Projeto completo de energia solar com 36 módulos. Realizado em Indaiatuba, SP.')">
@@ -143,7 +150,7 @@
         </div>
 
         <!-- DEPOIMENTOS -->
-        <section id="depoimentos">
+        <section id="depoimentos" class="fade-slide fade-up">
             <h2>Veja os Depoimentos</h2>
             <p id="depoimentos-sub">O que nossos clientes dizem no Google</p>
 
@@ -200,11 +207,114 @@
                         </div>
                     </div>
                 </div>
+
+                <a class="carousel-seta esquerda" href="#mCarousel" role="button" data-slide="prev">
+                    <span aria-hidden="true">&#10094;</span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-seta direita" href="#mCarousel" role="button" data-slide="next">
+                    <span aria-hidden="true">&#10095;</span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="fade-slide fade-up">
+            <p class="faq-tag">Tire suas dúvidas</p>
+            <h2>Perguntas Frequentes</h2>
+            <p class="faq-sub">Respondemos as dúvidas mais comuns antes de você decidir.</p>
+            <div class="faq-lista">
+
+                <div class="faq-item">
+                    <button class="faq-pergunta" onclick="toggleFaq(this)">
+                        O sistema funciona em dias nublados ou chuvosos?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim! Os painéis solares geram energia mesmo em dias nublados, pois funcionam com luz difusa, não apenas luz solar direta. Em dias de chuva a geração é menor, mas o sistema continua funcionando.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta" onclick="toggleFaq(this)">
+                        Posso financiar o sistema solar?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim! Trabalhamos com as melhores linhas de financiamento do mercado, incluindo opções com parcelas que cabem no bolso e juros competitivos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta" onclick="toggleFaq(this)">
+                        Quanto tempo leva a instalação?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>O processo completo, desde o projeto até o sistema ligado, leva em média <strong>15 a 30 dias</strong>. A instalação física em si costuma ser concluída em 1 a 2 dias.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta" onclick="toggleFaq(this)">
+                        O sistema precisa de manutenção?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Para os painéis solares, a principal necessidade é uma limpeza periódica (em média 1 vez por ano) para remover poeira e folhas. A chuva já ajuda nesse processo naturalmente. Além disso, oferecemos monitoramento remoto para acompanhar o desempenho do seu sistema em tempo real.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta" onclick="toggleFaq(this)">
+                        Qual é a garantia do sistema?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Os <strong>painéis solares</strong> têm garantia de produto de 15 anos e garantia de desempenho de até 30 anos pelos fabricantes. Os <strong>inversores</strong> têm garantia de 5 a 15 anos. E nossa <strong>mão de obra e instalação</strong> é garantida pela BLP Solar. Você tem tranquilidade por décadas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta" onclick="toggleFaq(this)">
+                        Vou zerar minha conta de luz completamente?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Na prática, a conta de luz não chega a zero porque as distribuidoras cobram uma <strong>taxa mínima de disponibilidade</strong>. Mas a economia pode chegar a <strong>90% ou mais</strong> do valor que você paga hoje.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta" onclick="toggleFaq(this)">
+                        Meu telhado é adequado para a instalação?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Atendemos telhados de cerâmica, fibrocimento, metálico e até lajes. Nossos engenheiros avaliam gratuitamente a orientação, inclinação e estrutura do seu telhado para garantir a melhor geração possível. A grande maioria das residências e comércios é compatível com o sistema.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-pergunta" onclick="toggleFaq(this)">
+                        Em quanto tempo o investimento se paga?
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>O retorno médio do investimento fica entre <strong>3 e 5 anos</strong>, dependendo do seu consumo e do sistema instalado. Como os painéis duram mais de 25 anos, você terá <strong>20 anos ou mais de energia praticamente gratuita</strong> após quitar o investimento.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align:center; margin-top: 40px;">
+                <a href="https://wa.me/5519992756676" target="_blank" class="botao">Ainda tem dúvidas? Fale com a gente ↗</a>
             </div>
         </section>
 
         <!-- FORMULÁRIO DE ORÇAMENTO -->
-        <section id="orcamento">
+        <section id="orcamento" class="fade-slide fade-up">
             <div class="orcamento-container">
                 <div class="orcamento-info">
                     <span class="orcamento-tag">Orçamento rápido</span>
@@ -255,17 +365,21 @@
     </main>
 
     <!-- RODAPÉ -->
-    <footer id="rodape">
+    <footer id="rodape" class="fade-slide fade-up">
         <div>
-            <h5><img src="IMG/logo.png" alt="BLP Solar" height="40" /></h5>
+            <h5>
+                <a href="#">
+                    <img src="IMG/BLP Logo.png" alt="BLP Solar" height="40" />
+                </a>
+            </h5>
             <p>Com a BLP, você converte energia solar em economia para o seu bolso e contribui para a preservação do meio ambiente.</p>
         </div>
         <div>
             <h5>Navegação</h5>
             <ul>
-                <li><a href="#">Home</a></li>
                 <li><a href="#contador">Projetos</a></li>
                 <li><a href="#orcamento">Orçamento</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="https://wa.me/5519992756676" target="_blank">Fale Conosco</a></li>
             </ul>
         </div>
@@ -284,5 +398,12 @@
         © 2026 BLP SOLAR – O futuro é ser sustentável. Todos os direitos reservados.
     </div>
 
+    <!-- Botão flutuante WhatsApp -->
+    <div id="whatsapp-button">
+        <a href="https://wa.me/5519992756676" target="_blank">
+            <img src="IMG/whatsapp-icon.png" alt="WhatsApp">
+        </a>
+    </div>
+    
 </body>
 </html>
