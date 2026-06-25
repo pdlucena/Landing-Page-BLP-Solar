@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BLP Solar - Projetos de energia limpa e sustentável.">
+    <meta name="description" content="BLP Solar - O futuro é ser sustentável.">
     <title>BLP Solar</title>
     <link rel="icon" href="/IMG/BLP Logo 2.png" type="image/png">
     <link rel="stylesheet" href="CSS/style.css"/>
@@ -39,7 +39,7 @@
             <h2>Energia <em>Solar</em> para o futuro</h2>
             <p>Cansado da conta de luz alta? Economize até 90% com energia solar limpa e sustentável.</p>
             <div id="hero-botoes">
-                <a href="https://wa.me/5519992756676" target="_blank" class="botao">Resolva seu problema ↗</a>
+                <a href="https://wa.me/5519992756676" target="_blank" class="botao">Resolva seu problema</a>
             </div>
         </section>
 
@@ -47,16 +47,16 @@
         <section id="beneficios" class="fade-slide fade-left">
         <h2>Por que escolher energia solar?</h2>
         <div id="grade-beneficios">
-            <div class="card-beneficios">💰 Economia de até 90%
+            <div class="card-beneficios"> Economia de até 90%
                 <p>Reduza drasticamente sua conta de energia e invista a economia em outras áreas da sua vida.</p>
             </div>
-            <div class="card-beneficios">🌱 Sustentabilidade ambiental
+            <div class="card-beneficios"> Sustentabilidade ambiental
                 <p>Contribua para um planeta mais limpo usando uma fonte renovável e inesgotável de energia.</p>
             </div>
-            <div class="card-beneficios">🏠 Valorização do imóvel
+            <div class="card-beneficios"> Valorização do imóvel
                 <p>Imóveis com energia solar são mais valorizados e atraentes para compradores e investidores.</p>
             </div>
-            <div class="card-beneficios">⚡ Independência energética
+            <div class="card-beneficios"> Independência energética
                 <p>Produza sua própria energia e fique menos dependente das tarifas e aumentos das distribuidoras.</p>
             </div>
         </div>
@@ -90,17 +90,14 @@
             <h2 id="contador-subtitulo">Projetos Realizados</h2>
             <div id="contador-grade">
                 <div class="contador-item">
-                    <div class="contador-icone">⚡</div>
                     <p class="contador-numero" data-alvo="400" data-sufixo="+">0</p>
                     <p class="contador-label">Projetos Realizados</p>
                 </div>
                 <div class="contador-item">
-                    <div class="contador-icone">🏠</div>
                     <p class="contador-numero" data-alvo="400" data-sufixo="+">0</p>
                     <p class="contador-label">Clientes Satisfeitos</p>
                 </div>
                 <div class="contador-item">
-                    <div class="contador-icone">📅</div>
                     <p class="contador-numero" data-alvo="6" data-sufixo=" anos">0</p>
                     <p class="contador-label">Anos de Experiência</p>
                 </div>
@@ -135,6 +132,21 @@
                 <div class="item-projeto" onclick="abrirJanela('IMG/foto8.jpeg', 'Instalação Residencial', 'Projeto residencial completo com 16 módulos e bateria de armazenamento incluída. Realizado em Indaiatuba, SP.')">
                     <img src="IMG/foto8.jpeg" alt="Projeto em Destaque" />
                 </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/video9.mp4', 'Instalação Residencial', 'Projeto residencial completo com 16 módulos e bateria de armazenamento incluída. Realizado em Indaiatuba, SP.', 'video')">
+                    <img src="IMG/foto9.jpg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/video10.mp4', 'Instalação Residencial', 'Projeto residencial completo com 16 módulos e bateria de armazenamento incluída. Realizado em Indaiatuba, SP.', 'video')">
+                    <img src="IMG/foto10.jpg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/video11.mp4', 'Instalação Residencial', 'Projeto residencial completo com 16 módulos e bateria de armazenamento incluída. Realizado em Indaiatuba, SP.', 'video')">
+                    <img src="IMG/foto11.jpg" alt="Projeto em Destaque" />
+                </div>
+                <div class="item-projeto" onclick="abrirJanela('IMG/video12.mp4', 'Instalação Residencial', 'Projeto residencial completo com 16 módulos e bateria de armazenamento incluída. Realizado em Indaiatuba, SP.', 'video')">
+                    <img src="IMG/foto12.jpg" alt="Projeto em Destaque" />
+                </div>
+            </div>
+            <div id="ver-mais-container">
+                <button id="btn-ver-mais" class="botao" onclick="verMaisProjetos()">Ver mais projetos</button>
             </div>
         </section>
 
@@ -142,16 +154,19 @@
         <div id="janela" onclick="fecharJanela()">
             <div id="janela-conteudo" onclick="event.stopPropagation()">
                 <button id="janela-fechar" onclick="fecharJanela()">✕</button>
-                <img id="janela-imagem" src="" alt="Projeto" />
+                <img id="janela-imagem" src="" alt="Projeto" style="display: none;"/>
+                <video id="janela-video" controls autoplay style="display: none;">
+                    <source id="janela-video-src" src="" type="video/mp4">
+                </video>
                 <h3 id="janela-titulo"></h3>
                 <p id="janela-descricao"></p>
-                <a href="https://wa.me/5519992756676" target="_blank" class="botao botao-janela">Quero um projeto igual ↗</a>
+                <a href="https://wa.me/5519992756676" target="_blank" class="botao botao-janela">Quero um projeto igual</a>
             </div>
         </div>
 
         <!-- DEPOIMENTOS -->
         <section id="depoimentos" class="fade-slide fade-up">
-            <h2>Veja os Depoimentos</h2>
+            <h2>Depoimentos</h2>
             <p id="depoimentos-sub">O que nossos clientes dizem no Google</p>
 
             <div id="mCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -225,7 +240,6 @@
             <h2>Perguntas Frequentes</h2>
             <p class="faq-sub">Respondemos as dúvidas mais comuns antes de você decidir.</p>
             <div class="faq-lista">
-
                 <div class="faq-item">
                     <button class="faq-pergunta" onclick="toggleFaq(this)">
                         O sistema funciona em dias nublados ou chuvosos?
@@ -235,7 +249,6 @@
                         <p>Sim! Os painéis solares geram energia mesmo em dias nublados, pois funcionam com luz difusa, não apenas luz solar direta. Em dias de chuva a geração é menor, mas o sistema continua funcionando.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <button class="faq-pergunta" onclick="toggleFaq(this)">
                         Posso financiar o sistema solar?
@@ -245,7 +258,6 @@
                         <p>Sim! Trabalhamos com as melhores linhas de financiamento do mercado, incluindo opções com parcelas que cabem no bolso e juros competitivos.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <button class="faq-pergunta" onclick="toggleFaq(this)">
                         Quanto tempo leva a instalação?
@@ -255,7 +267,6 @@
                         <p>O processo completo, desde o projeto até o sistema ligado, leva em média <strong>15 a 30 dias</strong>. A instalação física em si costuma ser concluída em 1 a 2 dias.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <button class="faq-pergunta" onclick="toggleFaq(this)">
                         O sistema precisa de manutenção?
@@ -265,7 +276,6 @@
                         <p>Para os painéis solares, a principal necessidade é uma limpeza periódica (em média 1 vez por ano) para remover poeira e folhas. A chuva já ajuda nesse processo naturalmente. Além disso, oferecemos monitoramento remoto para acompanhar o desempenho do seu sistema em tempo real.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <button class="faq-pergunta" onclick="toggleFaq(this)">
                         Qual é a garantia do sistema?
@@ -275,7 +285,6 @@
                         <p>Os <strong>painéis solares</strong> têm garantia de produto de 15 anos e garantia de desempenho de até 30 anos pelos fabricantes. Os <strong>inversores</strong> têm garantia de 5 a 15 anos. E nossa <strong>mão de obra e instalação</strong> é garantida pela BLP Solar. Você tem tranquilidade por décadas.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <button class="faq-pergunta" onclick="toggleFaq(this)">
                         Vou zerar minha conta de luz completamente?
@@ -285,7 +294,6 @@
                         <p>Na prática, a conta de luz não chega a zero porque as distribuidoras cobram uma <strong>taxa mínima de disponibilidade</strong>. Mas a economia pode chegar a <strong>90% ou mais</strong> do valor que você paga hoje.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <button class="faq-pergunta" onclick="toggleFaq(this)">
                         Meu telhado é adequado para a instalação?
@@ -295,7 +303,6 @@
                         <p>Atendemos telhados de cerâmica, fibrocimento, metálico e até lajes. Nossos engenheiros avaliam gratuitamente a orientação, inclinação e estrutura do seu telhado para garantir a melhor geração possível. A grande maioria das residências e comércios é compatível com o sistema.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
                     <button class="faq-pergunta" onclick="toggleFaq(this)">
                         Em quanto tempo o investimento se paga?
@@ -305,11 +312,9 @@
                         <p>O retorno médio do investimento fica entre <strong>3 e 5 anos</strong>, dependendo do seu consumo e do sistema instalado. Como os painéis duram mais de 25 anos, você terá <strong>20 anos ou mais de energia praticamente gratuita</strong> após quitar o investimento.</p>
                     </div>
                 </div>
-
             </div>
-
             <div style="text-align:center; margin-top: 40px;">
-                <a href="https://wa.me/5519992756676" target="_blank" class="botao">Ainda tem dúvidas? Fale com a gente ↗</a>
+                <a href="https://wa.me/5519992756676" target="_blank" class="botao">Ainda tem dúvidas? Fale com a gente</a>
             </div>
         </section>
 
@@ -321,9 +326,9 @@
                     <h2>Pronto para economizar com energia solar?</h2>
                     <p>Preencha os dados abaixo e nossa equipe entrará em contato com uma proposta personalizada para sua residência ou empresa.</p>
                     <ul>
-                        <li>✓ Análise sem compromisso</li>
-                        <li>✓ Simulação de economia</li>
-                        <li>✓ Instalação com equipe especializada</li>
+                        <li>• Análise sem compromisso</li>
+                        <li>• Simulação de economia</li>
+                        <li>• Instalação com equipe especializada</li>
                     </ul>
                 </div>
 
@@ -354,6 +359,7 @@
                             </select>
                         </div>
                     </div>
+
                     <label for="mensagem">Como podemos ajudar?</label>
                     <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre seu projeto..." required></textarea>
                     <button type="submit" class="botao botao-form">Solicitar orçamento</button>
@@ -368,9 +374,7 @@
     <footer id="rodape" class="fade-slide fade-up">
         <div>
             <h5>
-                <a href="#">
-                    <img src="IMG/BLP Logo.png" alt="BLP Solar" height="40" />
-                </a>
+                <img src="IMG/BLP Logo.png" alt="BLP Solar" height="40" />
             </h5>
             <p>Com a BLP, você converte energia solar em economia para o seu bolso e contribui para a preservação do meio ambiente.</p>
         </div>
@@ -386,9 +390,9 @@
         <div>
             <h5>Contato</h5>
             <ul>
-                <li>📍 Indaiatuba, SP</li>
-                <li>📞 (19) 99275-6676</li>
-                <li>✉️ contato@blpsolar.com.br</li>
+                <li> Indaiatuba, SP</li>
+                <li> (19) 99275-6676</li>
+                <li> contato@blpsolar.com.br</li>
                 <li>@blpsolar</li>
             </ul>
         </div>
