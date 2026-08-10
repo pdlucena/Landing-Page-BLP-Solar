@@ -19,16 +19,19 @@ window.addEventListener("scroll", () =>{
   let posicaoAtual = window.pageYOffset;
 
   if (menu){
-    if (posicaoAtual > ultimaPosicaoScroll && posicaoAtual > 100){
-      menu.style.transform = "translateY(-100%)";
-      menu.style.transition = "transform 0.3s ease";
-    } 
+    if (window.innerWidth > 600){
+        if (posicaoAtual > ultimaPosicaoScroll && posicaoAtual > 100){
+            menu.classList.add("escondido");
+        } 
 
-    else{
-      menu.style.transform = "translateY(0)";
+        else{
+            menu.classList.remove("escondido");
+        }
     }
-  }
-
+    else{
+      menu.classList.remove("escondido");
+    }
+}
   ultimaPosicaoScroll = posicaoAtual;
 });
 
@@ -60,34 +63,44 @@ if (contador){
 }
 
 // Modais
-function abrirJanela(src, titulo, descricao, tipo="imagem"){
+function abrirJanela(src, titulo, descricao){
     const janela = document.getElementById('janela');
-    const imagem = document.getElementById('janela-imagem');
     const video = document.getElementById('janela-video');
     const videoSrc = document.getElementById('janela-video-src');
     const tituloEl = document.getElementById('janela-titulo');
-    const descricaoEl = document.getElementById('janela-descricao');
+    const descricaoEl = document.getElementById('janela-descricao');    
 
     if (!janela) return;
 
-    imagem.style.display = "none";
-    video.style.display = "none";
+    videoSrc.src = src;
+    video.load();
+    video.play();
+    video.style.display = "block";
 
-    if (tipo === "imagem"){
-        imagem.src = src;
-        imagem.style.display = "block";
-    } 
-    else if (tipo === "video"){
-        videoSrc.src = src;
-        video.load();
-        video.play();
-        video.style.display = "block";
-    }
+    video.removeAttribute("controls");
+
+    video.addEventListener("pause", () => {
+        video.setAttribute("controls", "true");
+    });
+
+    video.addEventListener("play", () => {
+        video.removeAttribute("controls");
+    });
 
     tituloEl.textContent = titulo;
     descricaoEl.textContent = descricao;
 
     janela.classList.add('ativo');
+
+    if (window.innerWidth <= 768){
+        if (video.requestFullscreen){
+            video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen){
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen){
+            video.msRequestFullscreen();
+        }
+    }
 }
 
 function fecharJanela(){
