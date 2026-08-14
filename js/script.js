@@ -176,6 +176,47 @@ function fecharJanela(){
     }, {passive: true});
 })();
 
+// Carrossel
+(function(){
+    const carrossel = document.getElementById('mCarousel');
+    if (!carrossel) return;
+    const inner = carrossel.querySelector('.carousel-inner');
+    const itens = carrossel.querySelectorAll('.item');
+    if (!inner || !itens.length) return;
+
+    function ajustarAltura(){
+        let maior = 0;
+        itens.forEach(item =>{
+            const displayOriginal = item.style.display;
+            item.style.display = 'block';
+            maior = Math.max(maior, item.offsetHeight);
+            item.style.display = displayOriginal;
+        });
+        inner.style.minHeight = maior + 'px';
+    }
+
+    ajustarAltura();
+    window.addEventListener('resize', ajustarAltura);
+})();
+
+// Carrossel
+(function(){
+    const carrossel = document.getElementById('mCarousel');
+    if (!carrossel || typeof jQuery === 'undefined') return;
+
+    const observer = new IntersectionObserver((entries) =>{
+        entries.forEach(entry =>{
+            if (entry.isIntersecting){
+                jQuery(carrossel).carousel('cycle');
+            } else{
+                jQuery(carrossel).carousel('pause');
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(carrossel);
+})();
+
 // Orçamento
 function mostrarMensagem(event){
     event.preventDefault();

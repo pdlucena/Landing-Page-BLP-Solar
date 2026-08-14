@@ -461,6 +461,10 @@ img{
     position: relative;
 }
 
+#mCarousel .carousel-inner{
+    transition: min-height 0.3s ease;
+}
+
 .carousel-seta{
     position: absolute;
     top: 50%;
@@ -1074,7 +1078,6 @@ img{
 
     .faq-pergunta {
         font-size: 14px;
-        /* centralizar somente no mobile, mantendo espaço para o ícone */
         padding: 18px 48px 18px 16px;
         justify-content: center;
         text-align: center;
