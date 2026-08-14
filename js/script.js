@@ -63,29 +63,16 @@ if (contador){
 }
 
 // Modais
-function abrirJanela(src, titulo, descricao){
+function abrirJanela(videoId, titulo, descricao){
     const janela = document.getElementById('janela');
     const video = document.getElementById('janela-video');
-    const videoSrc = document.getElementById('janela-video-src');
     const tituloEl = document.getElementById('janela-titulo');
-    const descricaoEl = document.getElementById('janela-descricao');    
+    const descricaoEl = document.getElementById('janela-descricao');
 
     if (!janela) return;
 
-    videoSrc.src = src;
-    video.load();
-    video.play();
+    video.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&rel=0`;
     video.style.display = "block";
-
-    video.removeAttribute("controls");
-
-    video.addEventListener("pause", () => {
-        video.setAttribute("controls", "true");
-    });
-
-    video.addEventListener("play", () => {
-        video.removeAttribute("controls");
-    });
 
     tituloEl.textContent = titulo;
     descricaoEl.textContent = descricao;
@@ -109,8 +96,8 @@ function fecharJanela(){
     if (janela){
         janela.classList.remove('ativo');
         if (video){
-            video.pause();
-            video.currentTime = 0;
+            video.src = '';
+            video.style.display = 'none';
         }
     }
 }

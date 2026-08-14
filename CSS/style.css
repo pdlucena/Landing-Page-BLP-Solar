@@ -403,10 +403,11 @@ img{
 
 #janela-video{
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
   border-radius: 10px;
   margin-bottom: 20px;
-  background: #000;      
+  background: #000;
 }
 
 #janela-titulo{
