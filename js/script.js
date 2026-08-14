@@ -229,12 +229,16 @@ function mostrarMensagem(event){
     const form = event.target;
     const formData = new FormData(form);
 
-    fetch(form.action,{method: form.method, body: formData}).then(() =>{
-        feedback.textContent = 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
-        form.reset();
+    fetch(form.action,{method: form.method, body: formData}).then((resposta) =>{
+        if (resposta.ok){
+            feedback.textContent = 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
+            form.reset();
+        } else{
+            feedback.textContent = 'Não foi possível enviar agora. Tente novamente ou fale com a gente pelo WhatsApp.';
+        }
     })
     .catch(() =>{
-        feedback.textContent = 'Não foi possível enviar agora. Por favor, tente novamente mais tarde.';
+        feedback.textContent = 'Não foi possível enviar agora. Tente novamente ou fale com a gente pelo WhatsApp.';
     });
 }
 
