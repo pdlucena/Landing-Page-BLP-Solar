@@ -1011,7 +1011,12 @@ img{
 
     .contador-destaque{
         font-size: 3rem;
+        text-indent: 0px;
     }
+
+    .contador-item:nth-child(1) .contador-label{
+    text-indent: 0px;
+}
 
     .contador-label{
         font-size: 13px;
