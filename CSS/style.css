@@ -314,6 +314,18 @@ img{
     line-height: 1;
 }
 
+.contador-destaque{
+    font-size: 50px;
+    font-weight: bold;
+    color: #f5a623;
+    line-height: 1.15;
+    text-indent: -75px;
+}
+
+.contador-item:nth-child(1) .contador-label{
+    text-indent: -65px;
+}
+
 .contador-label{
     color: rgba(255,255,255,0.75);
     font-size: 15px;
@@ -994,6 +1006,10 @@ img{
     }
 
     .contador-numero{
+        font-size: 3rem;
+    }
+
+    .contador-destaque{
         font-size: 3rem;
     }
 
