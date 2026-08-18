@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HY9YQ0NL9E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HY9YQ0NL9E');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Economize até 90% na conta de luz com energia solar. Projetos residenciais, comerciais e industriais com garantia e financiamento facilitado.">
-    <title>BLP Solar - Energia Solar em Indaiatuba e Região</title>
+    <title>BLP Solar | Energia Solar em Indaiatuba e Região</title>
     <link rel="canonical" href="https://www.blpsolar.com.br/">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/IMG/favicon.png" type="image/png">
@@ -15,18 +24,81 @@
     <meta property="og:url" content="https://www.blpsolar.com.br/">
     <meta property="og:site_name" content="BLP Solar">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:title" content="BLP Solar - Energia Solar em Indaiatuba e Região">
+    <meta property="og:title" content="BLP Solar | Energia Solar em Indaiatuba e Região">
     <meta property="og:description" content="Economize até 90% na conta de luz com energia solar. Projetos residenciais, comerciais e industriais com garantia e financiamento facilitado.">
-    <meta property="og:image" content="https://www.blpsolar.com.br/IMG/foto1.jpeg">
+    <meta property="og:image" content="https://www.blpsolar.com.br/IMG/foto1.webp">
     <meta property="og:image:width" content="1544">
     <meta property="og:image:height" content="869">
     <meta property="og:image:alt" content="Instalação de energia solar realizada pela BLP Solar">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="BLP Solar - Energia Solar em Indaiatuba e Região">
+    <meta name="twitter:title" content="BLP Solar | Energia Solar em Indaiatuba e Região">
     <meta name="twitter:description" content="Economize até 90% na conta de luz com energia solar. Projetos residenciais, comerciais e industriais com garantia e financiamento facilitado.">
-    <meta name="twitter:image" content="https://www.blpsolar.com.br/IMG/foto1.jpeg">
+    <meta name="twitter:image" content="https://www.blpsolar.com.br/IMG/foto1.webp">
+
+    <!-- Dados estruturados (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://www.blpsolar.com.br/#organization",
+        "name": "BLP Solar",
+        "url": "https://www.blpsolar.com.br/",
+        "description": "Economize até 90% na conta de luz com energia solar. Projetos residenciais, comerciais e industriais com garantia e financiamento facilitado.",
+        "image": "https://www.blpsolar.com.br/IMG/foto1.webp",
+        "logo": "https://www.blpsolar.com.br/IMG/favicon.png",
+        "telephone": "+55 11 93700-5517",
+        "email": "contato@blpsolar.com.br",
+        "sameAs": [
+            "https://www.instagram.com/blpsolar/"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Indaiatuba",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "São Paulo"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55 11 93700-5517",
+            "contactType": "customer service",
+            "areaServed": "BR",
+            "availableLanguage": "Portuguese"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviços de Energia Solar",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Instalação de energia solar residencial"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Instalação de energia solar comercial"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Instalação de energia solar industrial"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 
     <link rel="stylesheet" href="CSS/style.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -116,13 +188,14 @@
                     <p class="contador-label">e todo o Estado de São Paulo</p>
                 </div>
                 <div class="contador-item">
-                    <p class="contador-numero" data-alvo="6" data-sufixo=" anos">0</p>
-                    <p class="contador-label">Anos de Experiência</p>
-                </div>
-                <div class="contador-item">
                     <p class="contador-numero" data-alvo="400" data-sufixo="+">0</p>
                     <p class="contador-label">Projetos Realizados</p>
                 </div>
+                <div class="contador-item">
+                    <p class="contador-numero" data-alvo="6" data-sufixo=" anos">0</p>
+                    <p class="contador-label">Anos de Experiência</p>
+                </div>
+                
             </div>
         </section>
 
@@ -131,40 +204,40 @@
             <h2>Projetos de Sucesso</h2>
             <div id="grade-projetos">
                 <div class="item-projeto" onclick="abrirJanela('0OBoK83Itp4', 'Instalação Comercial', 'Projeto completo de energia solar com 36 módulos. Realizado em Indaiatuba, SP, com foco em eficiência, economia e alta performance na geração de energia.', 'video')">
-                    <img src="IMG/foto1.jpeg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto1.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('yMBA7NCKwSg', 'Instalação Residencial', 'Sistema fotovoltaico instalado em residência, com 12 módulos e redução de até 90% na conta de energia. Realizado em Itu, SP.', 'video')">
-                    <img src="IMG/foto2.jpeg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto2.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('V8N7kEnCnac', 'Instalação Residencial', 'Sistema com 10 módulos. Solução compacta e eficiente para condomínios. Realizado em Salto, SP.', 'video')">
-                    <img src="IMG/foto3.jpeg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto3.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('IQnH-3yKZ28', 'Instalação Residencial', 'Projeto residencial com 44 módulos, garantindo independência energética na grande cidade. Realizado em São Paulo, SP.', 'video')">
-                    <img src="IMG/foto4.jpeg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto4.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('yCY4XpIJarQ', 'Instalação Residencial', 'Projeto residencial com 12 módulos de alta eficiência e monitoramento remoto. Realizado em Campinas, SP.', 'video')">
-                    <img src="IMG/foto5.jpeg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto5.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('wzmS9iGkCm8', 'Instalação Comercial', 'Sistema com 16 módulos para comércio, com geração de energia 24h. Realizado em Cajamar, SP.', 'video')">
-                    <img src="IMG/foto6.jpeg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto6.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('Ps18JMrcoZ4', 'Instalação Residencial', 'Sistema fotovoltaico de com 12 módulos de alta performance e monitoramento remoto, com microinversores Hoymiles, garantindo máxima geração mesmo em telhados com sombreamento parcial. Indaiatuba, SP.', 'video')">
-                    <img src="IMG/foto7.jpeg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto7.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('_MXtzU69994', 'Instalação Residencial', 'Projeto residencial completo com 12 módulos e bateria de armazenamento incluída. Realizado em Indaiatuba, SP.', 'video')">
-                    <img src="IMG/foto8.jpeg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto8.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('KUkqXX6iXaY', 'Instalação Rural', 'Instalação completa do projeto até a conexão à rede, com 12 módulos de última geração. Indaiatuba, SP.', 'video')">
-                    <img src="IMG/foto9.jpg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto9.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('xyjEbIkHtDI', 'Instalação Comercial', 'Projeto comercial completo com 170 módulos e bateria de armazenamento incluída. Realizado em Indaiatuba, SP.', 'video')">
-                    <img src="IMG/foto10.jpg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto10.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('Ph2eFqn59AM', 'Instalação Residencial', 'Sistema solar com 12 módulos dimensionados para atender 100% do consumo residencial, com previsão de retorno em até 4 anos. Indaiatuba, SP.', 'video')">
-                    <img src="IMG/foto11.jpg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto11.webp" alt="Projeto em Destaque" />
                 </div>
                 <div class="item-projeto" onclick="abrirJanela('uHNMUvmVhT0', 'Instalação Residencial', 'Do projeto à instalação: sistema solar completo com 12 módulos, tecnologia Hoymiles e monitoramento remoto em tempo real. Indaiatuba, SP.', 'video')">
-                    <img src="IMG/foto12.jpg" alt="Projeto em Destaque" />
+                    <img src="IMG/foto12.webp" alt="Projeto em Destaque" />
                 </div>
             </div>
             <div id="ver-mais-container">
@@ -404,6 +477,7 @@
 
                     <label for="mensagem">Como podemos ajudar?</label>
                     <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre seu projeto..." required></textarea>
+
                     <button type="submit" class="botao botao-form">Solicitar orçamento</button>
                     <p class="form-feedback" id="form-feedback">Mensagem enviada com sucesso!</p>
                 </form>
@@ -432,10 +506,10 @@
         <div>
             <h5>Contato</h5>
             <ul>
-                <li> Indaiatuba, SP</li>
+                <li>Indaiatuba - SP</li>
                 <li> (11) 93700-5517</li>
                 <li> contato@blpsolar.com.br</li>
-                <li>@blpsolar</li>
+                <li><a href="https://www.instagram.com/blpsolar/" target="_blank" rel="noopener">@blpsolar</a></li>
             </ul>
         </div>
     </footer>

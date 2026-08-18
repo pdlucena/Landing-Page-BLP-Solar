@@ -122,7 +122,7 @@ img{
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-  background: url("../IMG/fundo.jpg");
+  background: url("../IMG/fundo.webp");
   background-size: cover;
   background-position: center bottom;  
   font-weight: bold;
@@ -319,11 +319,11 @@ img{
     font-weight: bold;
     color: #f5a623;
     line-height: 1.15;
-    text-indent: -75px;
+    text-indent: -90px;
 }
 
 .contador-item:nth-child(1) .contador-label{
-    text-indent: -65px;
+    text-indent: -90px;
 }
 
 .contador-label{
@@ -889,6 +889,15 @@ img{
     font-size: 14px;
 }
 
+#rodape-fundo a{
+    color: #aaa;
+    text-decoration: underline;
+}
+
+#rodape-fundo a:hover{
+    color: #f5a623;
+}
+
 /* Botão Whatsapp */
 #whatsapp-button{
   position: fixed;
@@ -1016,7 +1025,7 @@ img{
 
     .contador-item:nth-child(1) .contador-label{
     text-indent: 0px;
-}
+    }
 
     .contador-label{
         font-size: 13px;
@@ -1147,7 +1156,7 @@ img{
     }
 
     #rodape img{
-        height: 50px;
+        height: 75px;
         display: block;
         margin: 0 auto;
     }
