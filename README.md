@@ -1,13 +1,13 @@
-# ☀️ BLP Solar — Landing Page
+# BLP Solar — Landing Page
 
 Site institucional da **BLP Solar**, empresa de energia solar sediada em Indaiatuba/SP, com atendimento em todo o Estado de São Paulo.
 
-🌐 **No ar em:** [www.blpsolar.com.br](https://www.blpsolar.com.br)
-🚀 **Hospedagem:** GitHub Pages, com domínio próprio configurado via DNS
+**No ar em:** [www.blpsolar.com.br](https://www.blpsolar.com.br)
+**Hospedagem:** GitHub Pages, com domínio próprio configurado via DNS
 
 ---
 
-## 📖 Sobre o projeto
+## Sobre o projeto
 
 Esse projeto começou no fim de fevereiro de 2026, quando comecei a aprender HTML e CSS do zero. Nunca tinha criado um site antes. Ele nasceu como trabalho final de semestre da faculdade, publicado de forma bem simples: uma única página estática, sem formulário, sem FAQ, sem galeria de projetos. Esse projeto inicial está preservado no repositório [`Projeto-Web---1-Semestre`](https://github.com/pdlucena/Projeto-Web---1-Semestre).
 
@@ -24,7 +24,7 @@ A partir daí, fui evoluindo o projeto sozinho, seção por seção, com o objet
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - **Hero** com chamada principal e botão de contato direto
 - **Seção de benefícios** da energia solar
@@ -39,7 +39,7 @@ A partir daí, fui evoluindo o projeto sozinho, seção por seção, com o objet
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - **HTML5** e **CSS3** (mais de 1.300 linhas de estilos próprios)
 - **JavaScript puro (vanilla)** para animações, carrossel, modais e validações
@@ -50,7 +50,7 @@ A partir daí, fui evoluindo o projeto sozinho, seção por seção, com o objet
 
 ---
 
-## 🚀 Performance e SEO
+## Performance e SEO
 
 - Substituição dos vídeos dos projetos, antes hospedados localmente (mais de 670 MB no repositório), por embeds do YouTube — reduzindo drasticamente o tempo de carregamento, principalmente no celular
 - Limpeza do histórico do Git, removendo arquivos binários grandes esquecidos em commits antigos
@@ -61,13 +61,13 @@ A partir daí, fui evoluindo o projeto sozinho, seção por seção, com o objet
 
 ---
 
-## 🔒 Privacidade e segurança
+## Privacidade e segurança
 
 - Proteção contra spam por **honeypot** (campo invisível que bloqueia envios automatizados sem atrapalhar visitantes reais)
 
 ---
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
 
 ```
 ├── index.html            # Página principal
@@ -85,13 +85,13 @@ A partir daí, fui evoluindo o projeto sozinho, seção por seção, com o objet
 
 ---
 
-## 🌐 Deploy
+## Deploy
 
 O site é publicado automaticamente pelo **GitHub Pages** a cada `push` na branch principal. O domínio `www.blpsolar.com.br` é próprio, configurado via registros DNS apontando para o GitHub Pages.
 
 ---
 
-## 👤 Autor
+## Autor
 
 **Pedro Lucena**
 Projeto desenvolvido, mantido e evoluído por mim, do primeiro HTML aprendido em fevereiro de 2026 até uma landing page comercial completa.
